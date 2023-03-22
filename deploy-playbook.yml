@@ -1,0 +1,23 @@
+---
+- name: Deploy Docker Image to Container
+  hosts: targets
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
+  tasks:
+    - name: Pull Docker Image
+      vars:
+        ansible_python_interpreter: /usr/bin/python3
+      docker_image:
+        name: ashugaju/adder-using-devops
+        tag: latest
+        source: pull
+
+    - name: Create & Start Adder Docker Container
+      docker_container:
+        name: adder-using-devops
+#         vars:
+#           ansible_python_interpreter: /usr/bin/python3
+        image: ashugaju/adder-using-devops
+        state: started
+        tty: yes
+        interactive: yes
