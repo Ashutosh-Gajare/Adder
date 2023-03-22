@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.example</groupId>
-  <artifactId>Adder</artifactId>
+  <artifactId>Adder-Using-DevOps</artifactId>
   <version>1.0-SNAPSHOT</version>
   <build>
     <plugins>
@@ -19,7 +19,7 @@
             <configuration>
               <archive>
                 <manifest>
-                  <mainClass>Adder.Adder</mainClass>
+                  <mainClass>adder.Adder</mainClass>
                 </manifest>
               </archive>
               <descriptorRefs>
