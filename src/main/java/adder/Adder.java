@@ -52,6 +52,7 @@ public class Adder {
     }
     public double add(double dnum1 , double dnum2)
     {
+        //logger.info("[Number - " + dnum1 + " Added with] " + dnum2);
         double result;
         result = dnum1 + dnum2 ;
         return result;
