@@ -2,9 +2,12 @@ package adder;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class Adder {
 
+    private static final Logger logger = LogManager.getLogger(Adder.class);
     public Adder()  //constructor
     {
 
@@ -14,6 +17,7 @@ public class Adder {
     {
         Adder Adder = new Adder(); //object of class adder
         Scanner scanner = new Scanner(System.in);
+
         double dnum1, dnum2;
         System.out.println("Press 'Enter' key to start the application");
         scanner.nextLine();
@@ -50,9 +54,9 @@ public class Adder {
             }
         }while(true);
     }
-    public double add(double dnum1 , double dnum2)
+    public  double add(double dnum1 , double dnum2)
     {
-        //logger.info("[Number - " + dnum1 + " Added with] " + dnum2);
+        logger.info("[Number - " + dnum1 + " Added with] " + dnum2);
         double result;
         result = dnum1 + dnum2 ;
         return result;
