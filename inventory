@@ -1,2 +1,2 @@
 [targets]
-172.16.137.141 ansible_user=user
+172.16.137.141 ansible_user=ashu
