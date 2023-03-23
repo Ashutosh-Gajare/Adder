@@ -1,0 +1,4 @@
+2023-03-23 04:12:37.628 [main] INFO  adder.Adder - [Number - 7.0 Added with] 8.0
+2023-03-23 04:12:37.631 [main] INFO  adder.Adder - [Number - -3.0 Added with] -14.0
+2023-03-23 04:12:37.634 [main] INFO  adder.Adder - [Number - 21.0 Added with] 3.0
+2023-03-23 04:12:37.634 [main] INFO  adder.Adder - [Number - 12.0 Added with] -31.0
